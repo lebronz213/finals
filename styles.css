@@ -1,0 +1,92 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: #f4f4f4;
+}
+
+h2 {
+    color: #333;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+
+input {
+    width: 250px;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    transition: 0.3s ease-in-out;
+}
+
+input:focus {
+    border-color: #007BFF;
+}
+
+button {
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    background: #007BFF;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+/* List of Locations */
+#locationsList {
+    list-style: none;
+    width: 320px;
+    background: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 15px;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+#locationsList li {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+#locationsList li:last-child {
+    border-bottom: none;
+}
+
+#locationsList li:hover {
+    background: #007BFF;
+    color: white;
+}
+
+
+#map {
+    height: 400px;
+    width: 90%;
+    max-width: 800px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
